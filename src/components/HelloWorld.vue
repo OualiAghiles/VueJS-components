@@ -9,12 +9,26 @@
         <todo></todo>
       </div>
     </div>
+    <div class="ui two column centered grid">
+      <carousel>
+    <carousel-slide>
+      <img src = "http://lorempicsum.com/up/800/400/4" alt = "1">
+    </carousel-slide>
+    <carousel-slide>
+      <img src = "http://lorempicsum.com/up/800/400/9" alt = "1">
+    </carousel-slide>
+  </carousel>
+
+    </div>
   </div>
 </template>
 
 <script>
 import alert from './alert'
 import todo from './toDo'
+import Carousel from './carousel/Carousel'
+import CarouselSlide from './carousel/CarouselSlide'
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -26,7 +40,9 @@ export default {
   },
   components: {
     alert,
-    todo
+    todo,
+    Carousel,
+    CarouselSlide
   },
   methods: {
     showAlert () {
